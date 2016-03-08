@@ -14,7 +14,7 @@ EXPOSE 80
 RUN yum install -y openssl mod_ssl
 EXPOSE 443
 
-# tag:PHP5.3.3
+# tag:PHP5.4.16
 RUN yum install -y php php-mbstring php-mysql sudo 
 
 #ENTRYPOINT /etc/init.d/httpd start
