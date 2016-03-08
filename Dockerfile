@@ -15,7 +15,7 @@ RUN yum install -y openssl mod_ssl
 EXPOSE 443
 
 # tag:PHP5.4.16-b
-#RUN yum install -y php php-mbstring php-mysql php-devel php-mcrypt sudo
+RUN yum install -y php php-mbstring php-mysql php-devel php-mcrypt sudo
 
 #ENTRYPOINT /etc/init.d/httpd start
 #ENTRYPOINT systemctl enable httpd && systemctl start httpd
